@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+    
+    <title>Playlist</title>
+</head>
+<body>
+    <div class="container">
+        <div class="playlistPage" style="display: none;">
+            <div class="AppName">
+                <h2 id="head">WadjPlaylist</h2>
+            </div>
+            <div class="ContainList">
+            <!-- <div class="list">
+                <p class="song">1. This is a song <i class="fa-solid fa-ellipsis"></i> <br> <i class="mega">4 Mo <span></span> mp3</i> </p>
+                <p class="song">2. This is a song <i class="fa-solid fa-ellipsis"></i> <br> <i class="mega">4 Mo <span></span> mp3</i> </p>
+                <p class="song">3. This is a song <i class="fa-solid fa-ellipsis"></i> <br> <i class="mega">4 Mo <span></span> mp3</i> </p>
+                <p class="song">4. This is a song <i class="fa-solid fa-ellipsis"></i> <br> <i class="mega">4 Mo <span></span> mp3</i> </p>
+                <p class="song">5. This is a song <i class="fa-solid fa-ellipsis"></i> <br> <i class="mega">4 Mo <span></span> mp3</i> </p>
+                <p class="song">6. This is a song <i class="fa-solid fa-ellipsis"></i> <br> <i class="mega">4 Mo <span></span> mp3</i> </p>
+            </div> -->
+            </div>
+            <div class="listenpage" style="display: none;">
+                <div class="showlistenpage">
+                    <i class="fa-solid fa-compact-disc"></i>
+                    <div class="ListenChange">
+                        <marquee><h3 class="listenTitle">This is a song boy hdhdhdhhdd</h3></marquee>
+                        <i id="prev" class="material-icons">skip_previous</i>
+                        <i id="play" class="material-icons">play_arrow</i>
+                        <i id="next" class="material-icons">skip_next</i>
+                    </div>
+                    <i class="fa-solid fa-x"></i>
+                </div>
+            </div>
+        </div>
+
+               <!-- Playing page -->
+
+    <div class="PlayingPage " style="display: block;">
+        <div class="playingPageTop">
+            <i id="fa-v" class="fa-solid fa-v"></i>
+            <i class="fa-solid fa-ellipsis"></i>
+        </div>
+        <div class="nameMusic">
+            <img class="imageSong" src="./Image/profil.jpg" alt="imgMusic">
+            <marquee><h3 class="title">This is a song</h3></marquee>
+        </div>
+        <div class="musicBar">
+           <div class="playingTime">
+            <div class="initialTime">00:00</div>
+            <div class="finalTime">04:25</div>
+           </div>
+           <input type="range" name="" id="TimeRange" min="0" max="100" value="0" >
+           <div class="volume">
+            <i id="volumeIcon" class="fa-solid fa-volume-high"></i>
+            <input type="range" name="" id="VolumeRange" min="0" max="100" >
+           </div>
+
+        </div>
+        <div class="musicPlay">
+            <i id="mode" class="fa-solid fa-arrows-rotate"></i>
+            <i id="preview" class="material-icons">skip_previous</i>
+            <i id="playing" class="material-icons">play_arrow</i>
+            <i id="nextsong" class="material-icons">skip_next</i>
+            <i id="MusicIcon" class="fa-solid fa-music"></i>
+        </div>
+    </div>
+    <div class="modePlaylist">
+        <div class="shape">
+            <div class="modeHead">
+                <h2><i class= "list material-icons">queue_music</i>MusicList</h2>
+                <i id="CloseMode" class="fa-solid fa-x"></i>
+            </div>
+            <div class="scroll">
+            <!-- <div class="modeList">
+            <h4><p class="modesong">This is the song created</p> <i>25:00</i></h4>
+            <h4><p class="modesong">This is the song created</p> <i>25:00</i></h4>
+            <h4><p class="modesong">This is the song created</p> <i>25:00</i></h4>   
+        </div> -->
+            </div>
+        </div>
+    </div>
+    </div>
+
+   
+    <script src="app.js"></script>
+</body>
+</html>

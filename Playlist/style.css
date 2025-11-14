@@ -1,0 +1,270 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(140deg,rgb(2, 2, 3), rgb(84, 84, 94),rgb(74, 73, 90),rgb(37, 37, 91));
+}
+.container{
+    margin-bottom: 5px;
+    position: relative;
+    overflow: hidden;
+    width: 390px;
+    height: 600px;
+    border-radius: 10px;
+    background: rgb(53, 7, 83);
+    box-shadow: 0 3px 0 2px rgba(205, 180, 221, 0.8);
+}
+.playlistPage{
+    padding: 10px;
+
+}
+#head:hover{
+    cursor: pointer;
+    transition: 0.2s;
+    transform: scale(1.01);
+}
+.playlistPage .AppName{
+    padding-bottom: 10px;
+    padding-top: 7px;
+    text-align: center;
+}
+.ContainList{
+    overflow-y: scroll;
+    height: 500px;
+}
+
+.ContainList::-webkit-scrollbar{
+width: 7px;
+}
+.ContainList::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: rgb(53, 7, 83);
+}
+.ContainList:hover::-webkit-scrollbar-thumb{
+    background-color: black;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+}
+.list p{
+    position: relative;
+    font-size: 19px;
+    border-bottom: 1px solid black;
+    padding-bottom: 7px;
+    padding-left: 18px;
+    background-color: rgba(53, 7, 83,0.8);
+    border-radius: 1px;
+}
+.list p:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.7s;
+}
+.mega{
+    font-size: 13px;
+}
+.list .fa-ellipsis{
+    text-align: center;
+    position: absolute;
+    right: 5px;
+}
+.container span{
+    display: flex;
+}
+input:hover{
+    cursor: pointer;
+}
+
+           /*Listen page*/
+.listenpage{
+    position: absolute;
+    bottom: 5px;
+    right: 1px;
+}
+.showlistenpage{
+    position: relative;
+    display: flex;
+    background-color: rgba(87, 46, 115, 0.9);
+    height: 100%;
+    padding: 8px;
+    align-items: center;
+    justify-content: space-between;
+}
+.ListenChange{
+    text-align: center;
+}
+.listenpage h3{
+    font-size: 23px;
+}
+.ListenChange i {
+    font-size: 40px;
+    padding-right: 5px;
+}
+
+.fa-compact-disc{
+    margin-right: 10px;
+    text-align: center;
+    width: 42px;
+    height: 100%;
+    padding: 5px;
+    font-size: 30px;
+    background: linear-gradient(violet,pink,red,lightpink);
+}
+.fa-x{
+    font-size: 19px;
+    margin-left: 25px;
+    margin-right: 15px;
+}
+.listenpage i:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+
+               /*Playing page*/
+.PlayingPage{
+    position: relative;
+    margin-top: 20px;
+}
+.playingPageTop{
+    display: flex;
+    justify-content: center;
+    gap: 10em;
+    font-size: 25px;
+}
+.nameMusic{
+    width: 370px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.nameMusic img{
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 1px 0 1px white;
+    margin-bottom: 10px;
+}
+.nameMusic h3{
+    margin-top: 10px;
+    font-size: 25px;
+}
+.musicBar{
+    position: relative;
+    margin-left: 3%;
+    margin-bottom: 20px;
+}
+.playingTime{
+  display: flex;
+  justify-content: center;
+  gap: 15em;
+}
+#TimeRange{
+    margin-top: 7px;
+    width: 320px;
+    margin-left: 5%;
+}
+.volume{
+    margin-top: 3px;
+    position: absolute;
+    right: 5px;
+}
+/* .fa-volume-high{
+    padding-top: 10px;
+} */
+#VolumeRange{
+    position: relative;
+    bottom: 5px;
+    height: 5px;
+    width: 100px;
+}
+.musicPlay{
+    position: relative;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 25px;
+}
+body i:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+     /* Mode Playlist */
+.modePlaylist{
+    transform: translateY(20%);
+    position: absolute;
+}
+.shape{
+    padding: 8px;
+    background: rgb(76, 34, 104,1);
+    width:390px ;
+    height: 250px;
+    border-radius: 10px;
+}
+.modeHead{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.modeHead h2{
+    display: flex;
+    text-align: center;
+}
+.scroll{
+    overflow-y: scroll;
+    max-height: 200px;
+    padding-left: 2%;
+    position: relative;
+}
+
+.scroll::-webkit-scrollbar{
+width: 7px;
+}
+.scroll::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: rgb(76, 34, 104,1);
+}
+.scroll:hover::-webkit-scrollbar-thumb{
+    background-color: black;
+}
+.modeSong{
+    
+    padding-bottom: 5px;
+}
+.modeList p{
+    padding-top: 5px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid white
+}
+.modeList h4{
+    font-weight: 600;
+    position: relative;
+}
+.modeList i{
+    top: 0px;
+    position: absolute;
+    right: 0px;
+}
+.modeList h4:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: 0.1s;
+}
+
+
+
