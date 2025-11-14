@@ -1,0 +1,341 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: black;
+    color: white;
+}
+/* .firstPage{
+    width: 80%;
+    height: 70vh;
+    background-image: url(profil.jpg);
+    background-size: cover;
+    background-position:center;
+} */
+
+nav{
+
+    
+}
+.navbar{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+
+}
+.fa-bars{
+    cursor: pointer;
+    display: none;
+}
+
+.navbar span{
+    color: rgb(198, 33, 33);
+}
+.ul{
+    cursor: pointer;
+    display: flex;
+    gap: 3em;
+    margin-left: 25px;
+}
+ .ul a{
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    
+}
+.ul :hover a{
+    border-bottom: 3px solid rgb(198, 33, 33);
+    transform: scale(0.9);
+
+    
+}
+
+.header-text{
+    margin-top: 10%;
+    text-align: center;
+    width: 500px;
+    margin-left: 15%;
+}
+.text span{
+  color: rgb(0, 162, 255);
+}
+#About{
+    margin-top:18%;
+    width: 70%;
+    margin-left: 13%;
+    display: flex;
+     gap:12rem;
+}
+#About img{
+   box-shadow:  0 1px 8px rgba(241, 239, 239, 0.5);
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+}
+.text-about{
+    
+
+}
+.text-about h1{
+   font-style: bold;
+}
+.talent{
+    display: flex;
+    gap: 2em;
+}
+.open-me{
+ display: flex;
+}
+.talent h3{
+    width: 100%;
+    cursor: pointer;
+}
+#dissapear{
+ 
+}
+  
+.talent h4{
+    color: rgb(198, 33, 33);
+}
+.text-talent h3:hover{
+    border-bottom:2px solid rgb(198, 33, 33);
+}
+#Services{
+    margin-top: 15%;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+#Services h1{
+    margin-left: 40px;
+    font-size: 40px;
+}
+.type-service{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: space-evenly;
+}
+.service{
+    background-color: rgb(62, 59, 59);
+    padding-left: 10px;
+  width: 350px;
+  height: 380px;
+  box-shadow:  0 1px 8px rgba(241, 239, 239, 0.5);
+  border-radius: 15px;
+}
+.service i{
+    font-size: 35px;
+    padding: 20px;
+}
+
+
+#Work{
+    margin-top: 18%;
+    margin-left: 60px;
+    position: relative;
+}
+.my-work{
+    padding-bottom: 15px;
+   display: flex;
+   flex-direction: column;
+   cursor: pointer;
+}
+.my-work a{
+    text-decoration: none;
+    color: white;
+}
+.my-work img{
+    width: 370px;
+    height: 450px;
+    border-radius: 15px;
+    box-shadow:  0 1px 8px rgba(241, 239, 239, 0.5);
+}
+.work-text{
+    position: absolute;
+    border-radius: 15px;
+    background-color: rgba(110, 184, 237, 0.7);
+    font-weight: 600;
+    font-size: larger;
+    width: 370px;
+    height: 450px;
+    text-align: center;
+    display: none;
+}
+.work-type{
+    padding-bottom: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+ button{
+    margin-left: 49%;
+    color: white;
+   width: 90px;
+   height: 33px;
+   border-radius: 5px;
+   background-color:black ;
+   cursor: pointer;
+}
+
+#contact{
+    padding-bottom: 25px;
+    
+}
+#contact h1{
+    margin-left: 40px;
+    font-size: 40px;
+}
+
+.comment{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.comment label{
+    padding-bottom: 15px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+}
+.comment p{
+    margin-top: 25px;
+    display: inline-block;
+    min-width: 240px;
+}
+.comment input, .comment textarea{
+    padding-left: 20px;
+    color: #fff;
+    width: 60vw;
+    height: 60px;
+    margin-left: 6%;
+    background-color: rgb(42, 39, 39);
+    outline:none;
+    border-radius: 5px;
+    overflow: hidden;
+    border: none;  
+}
+.comment textarea{
+    height: 120px;
+}
+
+footer{
+    padding-top:10px;
+    padding-bottom: 25px;
+}
+.tools{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: 2.5em;
+    font-size: 25px;
+}
+.fa-facebook{
+    color: #24B2EA;
+}
+.fa-youtube{
+    color: #FF0000;
+}
+.fa-instagram{
+    color: #FF00AE;
+}
+
+@media screen and (max-width:956px){
+    #About{
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+    
+}
+
+@media screen and (max-width: 728px){
+    .navbar{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .ul{
+        display: none;
+        padding-top: 10px;
+        position: relative;
+        top: 40px;
+        gap: 0em;
+        flex-direction: column;
+    }
+    .fa-bars{
+        font-size: 20px;
+        top: 35px;
+        right: 14%;
+        position: absolute;
+        display: block;
+    }
+    .navbar p{
+        border-bottom: 1px solid black;
+        text-align: center;
+        width: 100px;
+        height: 25px;
+        background-color: #302B4E;
+    }
+
+    label{
+    margin-top: 25px;
+    display: inline-block;
+    min-width: 250px;
+}
+label p{
+    position: absolute;
+    opacity: 0;
+/* }
+.text{
+    width: 350px;
+}
+#text{
+    font-size: 10px;
+} */
+
+}
+}
+
+
+
+
+
+
+
+/* label{
+    margin-top: 25px;
+    display: inline-block;
+    min-width: 250px;
+}
+.content{
+    gap: 5em;
+}
+input{
+    color: #fff;
+    width: 50%;
+    height: 40px;
+    margin-left: 6%;
+    background-color: rgb(42, 39, 39);
+    outline:none;
+    border-radius: 5px;
+    overflow: hidden;
+    border: none;  
+}
+.mail{
+    
+    font-size: 18px;
+    gap: 3px;
+}
+.mail span{
+}
+.mail i{
+    background: rgb(230, 10, 76);
+    color: black;
+} */
